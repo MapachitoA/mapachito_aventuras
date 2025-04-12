@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapachito.A</title>
+
+    <!-- Aquí agregamos los iconitos mágicos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapachito.A</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #87CEFA;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #b0e0e6;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #add8e6;
+        }
+
+        section {
+            display: none;
+            padding: 30px;
+            text-align: center;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #87CEFA;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+.comics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.comic-img {
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.comic-img:hover {
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mapachito.A</h1>
+        <p>Cómics dulces, picantes y con corazoncito</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('comic')">Cómic</button>
+        <button onclick="mostrarSeccion('sobremi')">Sobre mí</button>
+    </nav>
+
+    <section id="inicio" class="active">
+        <h2>Inicio</h2>
+        <p>¡Aquí comienza el mundo mágico de Mapachito y sus amigos!</p>
+    </section>
+
+    <section id="comic">
+<div class="comics">
+    <a href="mapachito1.jpg" target="_blank">
+        <img src="mapachito1.jpg" alt="Mapachito Aventura 1" class="comic-img">
+    </a>
+    <a href="mapachito2.jpg" target="_blank">
+        <img src="mapachito2.jpg" alt="Mapachito Aventura 2" class="comic-img">
+    </a>
+<a href="mapachito2.jpg" target="_blank">
+        <img src="mapachito2.jpg" alt="Mapachito Aventura 3" class="comic-img">
+<a href="mapachito2.jpg" target="_blank">
+        <img src="mapachito2.jpg" alt="Mapachito Aventura 4" class="comic-img">
+    </a>
+
+    </a>
+
+</div>    </section>
+
+    <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <p>Soy M.Rojas, también conocido como Mapachito.A. Amo contar historias, dibujarlas y compartir mundos únicos contigo.</p>
+     
+    </section>
+<footer>
+    <h3>Sígueme en mis redes</h3>
+    <p>
+        <a href="https://www.instagram.com/mapachelove.bl/" target="_blank">
+            <i class="fab fa-instagram"></i> Ing Mapachito.A
+        </a> |
+        <a href="mailto:monserrangeles@gmail.com">
+            <i class="fas fa-envelope"></i> Correo
+        </a> |
+        <a href="https://www.instagram.com/monserratt_rojasangeles/" target="_blank">
+            <i class="fab fa-instagram"></i> Ing personal
+        </a>
+    </p>
+</footer>
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll('section').forEach(seccion => {
+                seccion.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
